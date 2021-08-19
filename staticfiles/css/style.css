@@ -51,6 +51,7 @@ header>nav>a:nth-child(2){
     background-color: #fafafa;
     text-align: center;
     margin: 0 3%;
+    flex: 2;
 }
 
 .about_div>img {
