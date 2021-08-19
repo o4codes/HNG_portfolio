@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static  %}
+
+{% block content %}
+    <div class="form_container">
+        <h3>Let's build stuffs</h3>
+        <form class="contact_form" method='POST'>
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Save" onClick="showAlert()">
+        </form>
+    </div>
+    <script>
+        function showAlert() {
+            alert("Message Sent. Please check your mail");
+  }
+</script>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static  %}
+
+{% block content %}
+    <div class="about_div" id="about">
+        <div class="description_div">
+            <h1>I'm Shadrach</h1>
+            <h2>Software Engineer</h2>
+            <p>BackEnd Developer | Desktop Developer</p>
+        </div>
+        <img src="{% static 'images/myImage.jpg' %}">
+
+        <a href="{% url 'contact' %}" class="contact_btn">Contact Me</a>
+    </div>
+    
+{% endblock content %}
